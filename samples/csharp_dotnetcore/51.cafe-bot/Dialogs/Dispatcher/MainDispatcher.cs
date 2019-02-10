@@ -171,7 +171,7 @@ namespace Microsoft.BotBuilderSamples
                 case "None":
                 default:
                     await dc.Context.SendActivityAsync("I'm still learning.. Sorry, I do not know how to help you with that.");
-                    await dc.Context.SendActivityAsync($"Follow [this link](https://www.bing.com/search?q={dc.Context.Activity.Text}) to search the web!");
+                    await dc.Context.SendActivityAsync($"https://giphy.com/gifs/cat-funny-cute-11IYKJ5sN73twk");
                     return new DialogTurnResult(DialogTurnStatus.Empty);
             }
         }

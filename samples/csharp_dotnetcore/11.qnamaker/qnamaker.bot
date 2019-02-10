@@ -10,15 +10,15 @@
             "appPassword": "",
             "id": "25"
         },
-        {
-            "type": "qna",
-            "name": "",
-            "kbId": "",
-            "subscriptionKey": "",
-            "endpointKey": "",
-            "hostname": "",
-            "id": "117"
-        }
+      {
+        "type": "qna",
+        "name": "QnABot",
+        "kbId": "09f8db02-23bf-46e3-bd1e-f55504b3b873",
+        "subscriptionKey": "a66c0d8d-cc0f-4d05-a308-eaaf10a5f093",
+        "endpointKey": "9218ae4e-e806-4f6e-a16e-d139fa0a5ec5",
+        "hostname": "https://hbrothersdemoqna.azurewebsites.net/qnamaker",
+        "id": "117"
+      }
     ],
     "padlock": "",
     "version": "2.0"

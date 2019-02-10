@@ -1,16 +1,58 @@
 {
     "name": "CafeBot",
     "description": "",
-    "services": [
-        {
-            "type": "endpoint",
-            "id": "1",
-            "name": "development",
-            "appId": "",
-            "appPassword": "",
-            "endpoint": "http://localhost:3978/api/messages"
-        }
-    ],
+  "services": [
+    {
+      "type": "endpoint",
+      "id": "1",
+      "name": "development",
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages"
+    },
+    {
+      "type": "luis",
+      "id": "2",
+      "name": "cafeDispatchModel",
+      "appId": "999b19d0-a1dd-4069-a12c-4cadec1fdf0c",
+      "endpoint": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/999b19d0-a1dd-4069-a12c-4cadec1fdf0c?verbose=true&timezoneOffset=-360&subscription-key=198798329eb04e62b1b9e88a1f1a4580&q=",
+      "authoringKey": "198798329eb04e62b1b9e88a1f1a4580",
+      "subscriptionKey": "198798329eb04e62b1b9e88a1f1a4580",
+      "region": "westus",
+      "version": "0.1"
+    },
+    {
+      "type": "luis",
+      "id": "3",
+      "name": "cafeBotBookTableTurnNModel",
+      "appId": "f3fcbd25-9106-4a0e-b5f6-ffbd51d25445",
+      "endpoint": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/f3fcbd25-9106-4a0e-b5f6-ffbd51d25445?verbose=true&timezoneOffset=-360&subscription-key=198798329eb04e62b1b9e88a1f1a4580&q=",
+      "authoringKey": "198798329eb04e62b1b9e88a1f1a4580",
+      "subscriptionKey": "198798329eb04e62b1b9e88a1f1a4580",
+      "region": "westus",
+      "version": "0.1"
+    },
+    {
+      "type": "luis",
+      "id": "4",
+      "name": "getUserProfile",
+      "appId": "3ee5e430-c1ee-45b9-85cc-4dc94974962e",
+      "endpoint": "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/3ee5e430-c1ee-45b9-85cc-4dc94974962e?verbose=true&timezoneOffset=-360&subscription-key=198798329eb04e62b1b9e88a1f1a4580&q=",
+      "authoringKey": "198798329eb04e62b1b9e88a1f1a4580",
+      "subscriptionKey": "198798329eb04e62b1b9e88a1f1a4580",
+      "region": "westus",
+      "version": "0.1"
+    },
+    {
+      "type": "qna",
+      "name": "cafeFaqChitChat",
+      "kbId": "104ef594-c6d9-49f1-8269-53f69f60fc0a",
+      "subscriptionKey": "950a1e2fa495460eba26ab58ea497495",
+      "endpointKey": "9218ae4e-e806-4f6e-a16e-d139fa0a5ec5",
+      "hostname": "https://hbrothersdemoqna.azurewebsites.net/qnamaker",
+      "id": "92"
+    }
+  ],
     "padlock": "",
     "version": "2.0"
 }
